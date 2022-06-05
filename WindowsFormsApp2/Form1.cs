@@ -16,5 +16,13 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            comboBox1.Items.Clear();
+            comboBox1.Items.Add("Ucgen");
+            comboBox1.Items.Add("Dortgen");
+        }
     }
 }
