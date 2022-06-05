@@ -23,6 +23,13 @@ namespace WindowsFormsApp2
             comboBox1.Items.Clear();
             comboBox1.Items.Add("Ucgen");
             comboBox1.Items.Add("Dortgen");
+            comboBox1.SelectedIndex = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }
