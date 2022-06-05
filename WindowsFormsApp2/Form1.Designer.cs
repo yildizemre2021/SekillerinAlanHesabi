@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.sonuc = new System.Windows.Forms.Label();
+            this.cevreSonucu = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +67,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(343, 136);
             this.comboBox1.Name = "comboBox1";
@@ -98,11 +101,33 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Yukseklik";
             // 
+            // sonuc
+            // 
+            this.sonuc.AutoSize = true;
+            this.sonuc.Font = new System.Drawing.Font("Consolas", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sonuc.Location = new System.Drawing.Point(293, 323);
+            this.sonuc.Name = "sonuc";
+            this.sonuc.Size = new System.Drawing.Size(77, 28);
+            this.sonuc.TabIndex = 7;
+            this.sonuc.Text = "sonuc";
+            // 
+            // cevreSonucu
+            // 
+            this.cevreSonucu.AutoSize = true;
+            this.cevreSonucu.Font = new System.Drawing.Font("Consolas", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cevreSonucu.Location = new System.Drawing.Point(293, 295);
+            this.cevreSonucu.Name = "cevreSonucu";
+            this.cevreSonucu.Size = new System.Drawing.Size(90, 28);
+            this.cevreSonucu.TabIndex = 8;
+            this.cevreSonucu.Text = "label4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cevreSonucu);
+            this.Controls.Add(this.sonuc);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -129,6 +154,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label sonuc;
+        private System.Windows.Forms.Label cevreSonucu;
     }
 }
 
