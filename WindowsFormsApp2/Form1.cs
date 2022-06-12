@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
             comboBox1.Items.Clear();
             comboBox1.Items.Add("Ucgen");
             comboBox1.Items.Add("Dortgen");
+            comboBox1.Items.Add("Cember");
             comboBox1.SelectedIndex = 0;
             sonuc.Text = "";
             cevreSonucu.Text = "";
@@ -46,12 +47,33 @@ namespace WindowsFormsApp2
             {
                 sekil1 = new Dortgen(taban, yukseklik);
             }
+            else if (comboBox1.SelectedIndex == 2)
+            {
+              
+                sekil1 = new Dortgen(taban, yukseklik);
+            }
             else
                 throw new NotSupportedException(); 
             if(comboBox1.SelectedIndex == 1)
                 cevreSonucu.Text = "Cevre " + sekil1.CevreHesabi().ToString() + " bulunmustur.";
             sonuc.Text = "Alan " + sekil1.AlanHesabi().ToString() + " bulunmustur.";
             
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 2)
+            {
+                label2.Text = "Yaricap";
+                label1.Visible = false;
+                numericUpDown2.Visible = false;
+            }
+            else
+            {
+                label1.Text = "Taban Uzunlugu";
+                label2.Visible = true;
+                numericUpDown2.Visible = true;
+            }
         }
     }
 }
